@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Support</title>
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Header */
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 120px;
+        }
+
+        /* Support Section */
+        h2 {
+            font-size: 28px;
+            color: #1877f2;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .call-btn {
+            width: 200px;
+            padding: 15px;
+            background-color: #25d366; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .call-btn:hover {
+            background-color: #128c7e;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #65676b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main container -->
+    <div class="container">
+        <div class="support-section">
+            <h2>Facebook Support</h2>
+            <p>If you're having trouble with your account, we are here to help you.</p>
+            <p>Click the button below to speak with our support team directly.</p>
+            <button class="call-btn" id="callBtn">Call Now +1(844)439-5595</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Fast Support &copy; 2024</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('callBtn').addEventListener('click', function() {
+            const supportPhoneNumber = "+18444395595"; 
+    window.location.href = `tel:${supportPhoneNumber}`;
+        });
+    </script>
+
+</body>
+</html>
